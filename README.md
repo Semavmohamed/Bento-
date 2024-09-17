@@ -1,6 +1,6 @@
 # Bento-
 Challenge for Frontend Mentor by using HTML &amp; CSS
-<<<<<<< HEAD
+
 
 ![The result](./mine.PNG)
 =======
@@ -10,5 +10,5 @@ You can see my solution here: https://www.frontendmentor.io/solutions/responsive
 
 Any suggestions on how I can improve are welcome!
 
-![The result ] (./mine.PNG)
+
 >>>>>>> 96b996ea3fdd465736d693ea605af33d727b145b
