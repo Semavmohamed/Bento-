@@ -6,4 +6,4 @@ You can see my solution here: https://www.frontendmentor.io/solutions/responsive
 
 Any suggestions on how I can improve are welcome!
 
-![The result ] (./mine.png)
+![The result ] (./mine.PNG)
