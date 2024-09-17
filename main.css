@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root {
+    --color1: #7651dc;
+    --color2: #dcd1fc;
+    --color3: #faeee2;
+    --color4: #ffcb69;
+
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    /* font-style: italic; */
+    background-color: #eee;
+}
+
+main {
+    display: grid;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    grid-template-columns: repeat(4, 600px);
+    grid-template-rows: repeat(6, 250px);
+
+}
+
+main div {
+    margin: 20px;
+    gap: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 30px;
+
+}
+
+main .box1 {
+    background-color: var(--color3);
+    grid-column: 1/2;
+    grid-row: 1/4;
+    font-size: 60px;
+    padding-top: 100px;
+    line-height: 1;
+    word-spacing: 2%;
+
+}
+
+main .box1 span {
+    color: var(--color1);
+    font-weight: bold;
+    font-style: italic;
+}
+
+main .box1 img {
+    width: 250px;
+    padding-top: 30px;
+}
+
+main .box2 {
+    background-color: var(--color1);
+    grid-column: 2/4;
+    grid-row: 1/3;
+    font-size: 88px;
+    color: white;
+    padding-top: 43px;
+}
+
+main .box2 p:last-child {
+    font-size: 20px;
+}
+
+.box2 .italic {
+    font-style: italic;
+}
+
+.box2 span {
+    color: var(--color4);
+}
+
+main .box2 img {
+    width: 300px;
+}
+
+main .box3 {
+    background-color: var(--color2);
+    grid-column: 4/5;
+    grid-row: 1/5;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 50px 0px 0px 19px;
+    overflow: hidden;
+}
+
+main .box3 img {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 20%;
+    padding: 30px 0px;
+
+}
+
+main .box3 p:last-child {
+    font-size: 28px;
+    font-weight: normal;
+    padding: 24px;
+}
+
+main .box4 {
+    background-color: var(--color4);
+    grid-column: 1/2;
+    grid-row: 4/7;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+main .box4 img {
+    width: 400px;
+    padding-top: 30px;
+}
+
+main .box5 {
+    background-color: white;
+    grid-column: 2/3;
+    grid-row: 3/5;
+    font-size: 45px;
+    overflow: hidden;
+    font-weight: bold;
+    padding: 30px;
+}
+
+main .box5 img {
+    margin-bottom: 30px;
+    width: 600px;
+}
+
+main .box6 {
+    background-color: var(--color4);
+    grid-column: 3/4;
+    grid-row: 3/5;
+    font-weight: bold;
+    font-size: 55px;
+    overflow: hidden;
+}
+
+main .box6 img {
+    width: 400px;
+    padding-top: 40px;
+}
+
+main .box7 {
+    background-color: white;
+    grid-column: 2/3;
+    grid-row: 5/7;
+    font-size: 30px;
+}
+
+main .box7 p:first-child {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+main .box7 img {
+    width: 400px;
+    margin-top: 40px;
+}
+
+main .box8 {
+    background-color: var(--color1);
+    grid-column: 3/5;
+    grid-row: 5/7;
+}
+
+main .box8 img {
+    width: 400px;
+    padding-right: 20px;
+    text-align: start;
+    display: flex;
+}
+
+main .box8 .par {
+    color: white;
+    font-size: 50px;
+    text-align: end;
+    position: relative;
+    top: -300px;
+}
+
+@media (max-width:750px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 30px;
+    }
+
+    main div {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    main .box1,
+    main .box2,
+    main .box3,
+    main .box4,
+    main .box5,
+    main .box6,
+    main .box7,
+    main .box8 {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        font-size: 20px;
+    }
+
+    main .box1 img,
+    main .box2 img,
+    main .box3 img,
+    main .box4 img,
+    main .box5 img,
+    main .box6 img,
+    main .box7 img,
+    main .box8 img {
+        width: 100%;
+        /* ضبط عرض الصورة لتناسب حجم الـ box */
+        height: auto;
+        /* ضبط الارتفاع تلقائيًا */
+    }
+
+    main .box8 .par {
+        top: 10px
+    }
+}
